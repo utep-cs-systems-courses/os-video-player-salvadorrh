@@ -9,7 +9,7 @@ and convert them to grayscale, and the third thread will display those
 frames. The threads will run concurrently.
 
 In order to run this lab opencv will need to be installed. To install opencv
-use the follwing commands (note that ordering is important):
+use the following commands (note that ordering is important):
 
     sudo zypper -n install python3-devel
     sudo zypper -n install ffmpeg ffmpeg-3
@@ -60,7 +60,7 @@ them in sequence
 * Frames will be communicated between threads using producer/consumer idioms
   * Producer/consumer qeueus must be bounded at ten frames
 
-Note: You may have ancillary objects and method in order to make you're code easer to understand and implement.
+Note: You may have ancillary objects and method in order to make your code easier to understand and implement.
 
 
 # to install on ubuntu
