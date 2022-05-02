@@ -33,12 +33,12 @@ them as jpeg images in sequentially numbered files with the pattern
 'frame_xxxx.jpg'.
 
 ### ConvertToGrayscale.py
-Loads a series for frams from sequentially numbered files with the pattern
-'frame_xxxx.jpg', converts the grames to grayscale, and saves them as jpeg
+Loads a series for frames from sequentially numbered files with the pattern
+'frame_xxxx.jpg', converts the frames to grayscale, and saves them as jpeg
 images with the file names 'grayscale_xxxx.jpg'
 
 ### DisplayFrames.py
-Loads a series of frames sequently from files with the names
+Loads a series of frames sequentially from files with the names
 'grayscale_xxxx.jpg' and displays them with a 42ms delay.
 
 ### ExtractAndDisplay.py
@@ -51,14 +51,14 @@ them in sequence
 * You must have three functions
   * One function to extract the frames
   * One function to convert the frames to grayscale
-  * One function to display the frames at the original framerate (24fps)
+  * One function to display the frames at the original frame rate (24fps)
 * The functions must each execute within their own python thread
   * The threads will execute concurrently
-  * The order threads execute in may not be the same from run to run
+  * The order threads execute may not be the same from run to run
 * Threads will need to signal that they have completed their task
 * Threads must process all frames of the video exactly once
 * Frames will be communicated between threads using producer/consumer idioms
-  * Producer/consumer qeueus must be bounded at ten frames
+  * Producer/consumer queues must be bounded at ten frames
 
 Note: You may have ancillary objects and method in order to make your code easier to understand and implement.
 
